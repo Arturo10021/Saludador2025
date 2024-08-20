@@ -1,5 +1,5 @@
 export class botSaludos {  
-    saludar(hora) {
+    saludar(nombre,hora,genero) {
     let saludo="";
     let tipoSaludo = ["Hola", "Buenos días", "Buenas tardes", "Buenas noches"];
     let add =0;
@@ -16,6 +16,9 @@ export class botSaludos {
             add = 0;
         }
         saludo = tipoSaludo[add] + " ";
+  
+        saludo+= nombre;
+        console.log(nombre);
     return saludo;
     }
 }
