@@ -16,7 +16,11 @@ export class botSaludos {
             add = 0;
         }
         saludo = tipoSaludo[add] + " ";
-  
+        if ((genero === "M" || genero === "m") ) {
+            saludo += "Sr. ";
+        }else if ((genero === "F" || genero === "f") ) {
+            saludo += "Sra. ";
+        }
         saludo+= nombre;
         console.log(nombre);
     return saludo;
