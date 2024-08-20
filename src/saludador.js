@@ -1,5 +1,5 @@
 export class botSaludos {  
-    saludar(nombre,hora,genero) {
+    saludar(nombre,hora,genero,edad) {
     let saludo="";
     let tipoSaludo = ["Hola", "Buenos días", "Buenas tardes", "Buenas noches"];
     let add =0;
@@ -16,9 +16,9 @@ export class botSaludos {
             add = 0;
         }
         saludo = tipoSaludo[add] + " ";
-        if ((genero === "M" || genero === "m") ) {
+        if ((genero === "M" || genero === "m") && edad >=30) {
             saludo += "Sr. ";
-        }else if ((genero === "F" || genero === "f") ) {
+        }else if ((genero === "F" || genero === "f") && edad >=30) {
             saludo += "Sra. ";
         }
         saludo+= nombre;
