@@ -47,19 +47,19 @@ describe("Saludador", () => {
     it("Saludar a Pedro en el dia en ingles", () => {
       let botsaludos = new botSaludos();
       let resultado = botsaludos.saludar("Pedro", 9, "M", 25, "en") 
-      expect(resultado).toEqual("Good morning Pedro");
+      expect(resultado).toEqual("Good morning Young Pedro");
     });
 
     it("Saludar a Pedro en la tarde en ingles", () => {
       let botsaludos = new botSaludos();
       let resultado = botsaludos.saludar("Pedro", 15, "M", 12, "en") 
-      expect(resultado).toEqual("Good afternoon Pedro");
+      expect(resultado).toEqual("Good afternoon Young Pedro");
     });
 
     it("Saludar a Pedro en la noche en ingles", () => {
       let botsaludos = new botSaludos();
       let resultado = botsaludos.saludar("Pedro", 21, "M", 15, "en") 
-      expect(resultado).toEqual("Good evening Pedro");
+      expect(resultado).toEqual("Good evening Young Pedro");
     });
 
   });
